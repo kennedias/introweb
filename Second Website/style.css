@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'ABeeZee', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url("images/banner2.png");
+    background-size: cover;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 20%;
+    text-align: center;
+    display: inline-block;
+}
+
+header img {
+    width: 100%;
+}
+
+.main-navigation {
+    align-self: flex-end;
+}
+
+.main-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: orange;
+}
+
+.main-navigation a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333333;
+    border-style: solid;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.main-navigation a:hover {
+    background-color: #333333;
+    color: #eeeeee;
+}
+
+.main-navigation .active {
+    background-color: lightgray;
+}
+
+main {}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.column {
+    /*  flex: 1 0 0;*/
+    padding-right: 50px;
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.column h3 {
+    padding-right: 50px;
+    text-align: center;
+}
+
+.column img {
+    max-width: 60%;
+}
+
+.span1-4 {
+    width: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.span1 {
+    width: 75%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: orange;
+    height: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer img {
+    width: 30%;
+}
+
+.row_footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+    background-color: lightgray;
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.searchBar input {
+    height: 25px;
+    width: 500px;
+    margin: 5px;
+}
+
+.searchBar img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.row-feature {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+}
+
+.colum-feature {
+    Flex: 1 0 0;
+    margin: 3% auto;
+}
+
+.colum-feature img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+div.img {
+    border: 1px solid #ccc;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Contact */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3px;
+    margin: 0 auto;
+    background-color: lightgray;
+    max-width: 70%;
+    min-height: 40%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contact_row {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 2%;
+}
+
+.contact_column {
+    flex: 1 0 0;
+    padding-right: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+
+/* About */
+
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+    margin: 0 auto;
+    /* background-color: lightgray;*/
+    background-image: url("images/pencilonpapper.JPG");
+    background-size: cover;
+    max-width: 70%;
+    min-height: 60%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: justify;
+}
+
+
+/*
+.about::after {
+    content: "";
+    background: url("images/pencilonpapper.JPG");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}*/
+
+.about_column {
+    flex: 1 0 0;
+    padding: 5%;
+    text-align: justify;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.3)
+}
+
+.whitebox {
+    margin: 30px;
+    background-color: #ffffff;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    /* For IE8 and earlier */
+}
