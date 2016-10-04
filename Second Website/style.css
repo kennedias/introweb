@@ -152,13 +152,13 @@ footer img {
 }
 
 .colum-feature {
-    Flex: 1 0 0;
     margin: 3% auto;
+    max-width: 20%;
+    max-height: 20%;
 }
 
 .colum-feature img {
-    max-width: 400px;
-    max-height: 400px;
+    width: 100%;
 }
 
 
@@ -170,6 +170,27 @@ footer img {
     justify-content: center;
     padding: 5px;
     margin: 5px auto;
+}
+
+.gallery p {
+    text-align: justify;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: justify;
+    justify-content: center;
+}
+
+.pagination_itens {}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333333;
 }
 
 div.img {
