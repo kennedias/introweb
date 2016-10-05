@@ -3,29 +3,27 @@
 
 <head>
     <title>Drawings Store</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">   
-</head>
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet"> </head>
 
 <body>
     <header>
         <div class="header-row">
-            <div class="logo">
-                <img src="images/drawings_logo.png">
-            </div>
+            <div class="logo"> <img src="images/drawings_logo.png"> </div>
             <button id="nav-button">
                 <div class="stripe"></div>
                 <div class="stripe"></div>
                 <div class="stripe"></div>
             </button>
         </div>
-        <nav class="navigation" >
+        <nav class="navigation">
             <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="gallery.html">Gallery</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -35,66 +33,69 @@
         <input type="text" name="searchBox"> <img src="images/search_ico.svg"> </div>
     <div class="feature"> </div>
     <main>
-        <div class="gallery">
-            <div class="responsive">
-                <div class="img"> <img src="images/kylo_darth.jpg" width="300" height="200">
-                    <div class="desc">
-                        <h3>Kylo and Darth</h3>
-                        <p>Hand art based in Calvin and Harold.</p>
-                        <br>
-                        <h3>$20</h3> </div>
+        <div class="gallery_container">
+            <div class="gallery_row">
+                <div class="responsive">
+                    <div class="img"> <img src="images/kylo_darth.jpg" width="300" height="200">
+                        <div class="desc">
+                            <h3>Kylo and Darth</h3>
+                            <p>Hand art based in Calvin and Harold.</p>
+                            <br>
+                            <h3>$20</h3> </div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img"> <img src="images/stickman.jpg" width="600" height="400">
+                        <div class="desc">
+                            <h3>The Stick Man</h3>
+                            <p>Classic stick man in a casual walk.</p>
+                            <br>
+                            <h3>$10</h3> </div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img"> <img src="images/snowman.jpg" width="600" height="400">
+                        <div class="desc">
+                            <h3>My snow man</h3>
+                            <p>This is snow man my friend and I.</p>
+                            <br>
+                            <h3>$8</h3> </div>
+                    </div>
                 </div>
             </div>
-            <div class="responsive">
-                <div class="img"> <img src="images/stickman.jpg" width="600" height="400">
-                    <div class="desc">
-                        <h3>The Stick Man</h3>
-                        <p>Classic stick man in a casual walk.</p>
-                        <br>
-                        <h3>$10</h3> </div>
+            <div class="clearfix"></div>
+            <div class="gallery_row">
+                <div class="responsive">
+                    <div class="img"> <img src="images/spiderman.jpg" width="300" height="200">
+                        <div class="desc">
+                            <h3>Spiderman</h3>
+                            <p>Black and white with shades. Very realistic one.</p>
+                            <h3>$50</h3> </div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img"> <img src="images/dog.jpg" width="600" height="400">
+                        <div class="desc">
+                            <h3>Dog cop</h3>
+                            <p>This patrol dog is a badass!</p>
+                            <br>
+                            <h3>$10</h3> </div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="img"> <img src="images/reybb8.jpg" width="600" height="400">
+                        <div class="desc">
+                            <h3>Rey and BB8</h3>
+                            <p>Hand art based in Calvin and Harold. </p>
+                            <br>
+                            <h3>$20</h3> </div>
+                    </div>
                 </div>
             </div>
-            <div class="responsive">
-                <div class="img"> <img src="images/snowman.jpg" width="600" height="400">
-                    <div class="desc">
-                        <h3>My snow man</h3>
-                        <p>This is snow man my friend and I.</p>
-                        <br>
-                        <h3>$8</h3> </div>
-                </div>
+            <div class="clearfix"></div>
+            <div class="pagination">
+                <div class="pagination_itens"> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> </div>
             </div>
-        </div>
-        <div class="gallery">
-            <div class="responsive">
-                <div class="img"> <img src="images/spiderman.jpg" width="300" height="200">
-                    <div class="desc">
-                        <h3>Spiderman</h3>
-                        <p>Black and white with shades. Very realistic one.</p>
-                        <h3>$50</h3> </div>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="img"> <img src="images/dog.jpg" width="600" height="400">
-                    <div class="desc">
-                        <h3>Dog cop</h3>
-                        <p>This patrol dog is a badass!</p>
-                        <br>
-                        <h3>$10</h3> </div>
-                </div>
-            </div>
-            <div class="responsive">
-                <div class="img"> <img src="images/reybb8.jpg" width="600" height="400">
-                    <div class="desc">
-                        <h3>Rey and BB8</h3>
-                        <p>Hand art based in Calvin and Harold. </p>
-                        <br>
-                        <h3>$20</h3> </div>
-                </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="pagination">
-            <div class="pagination_itens"> <a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> </div>
         </div>
     </main>
     <footer>
