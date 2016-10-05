@@ -160,29 +160,39 @@ header img {
 }
 
 
-/* HOME - FEATURE */
+/* HOME  */
 
-.row-feature {
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.home-row {
     display: flex;
     flex-direction: row;
     align-content: center;
     text-align: center;
+    /*    margin: 3px; */
+    display: inline-block;
 }
 
-.colum-feature {
+.home-column {
     margin: 3% auto;
     max-width: 20%;
     max-height: 20%;
 }
 
-.colum-feature img {
+.home-column img {
     width: 100%;
 }
 
 
 /* HOME - SAMPLE */
 
-.row-sample {
+.sample-row {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -191,20 +201,20 @@ header img {
     margin: 3px;
 }
 
-.colum-sample {
+.sample-column {
     margin: 3% auto;
     max-width: 30%;
     max-height: 20%;
 }
 
-.colum-sample img {
+.sample-column img {
     width: 100%;
 }
 
 
 /* GALLERY */
 
-.gallery_container {
+.gallery {
     display: flex;
     flex-direction: column;
     margin-left: 20%;
@@ -334,6 +344,29 @@ div.desc {
     text-align: left;
 }
 
+.contact-button {
+    background-color: royalblue;
+    border: none;
+    color: white;
+    padding: 5% 8%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8% 4%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+.contact a:hover {
+    color: orange;
+}
+
 
 /* ABOUT */
 
@@ -428,6 +461,15 @@ div.desc {
     border-radius: 12px;
 }
 
+.login a {
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+.login a:hover {
+    color: orange;
+}
+
 
 /* BUY */
 
@@ -510,6 +552,83 @@ div.desc {
 }
 
 
+/* PASSWORD RECOVERY */
+
+.passrecovery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3px;
+    margin: 0 auto;
+    background-color: lightgray;
+    max-width: 70%;
+    min-height: 40%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.passrecovery_row {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 2%;
+}
+
+.passrecovery_column {
+    flex: 1 0 0;
+    padding-right: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.passrecovery_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.passrecovery label {
+    display: block;
+    text-align: left;
+}
+
+.passrecovery-button {
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    padding: 5% 8%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8% 4%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+
+/*  SIGN UP  */
+
+.signup-button {
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    padding: 5% 8%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8% 4%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+
 /* FOOTER */
 
 footer {
@@ -546,23 +665,6 @@ footer img {
 }
 
 
-/*  SIGN UP  */
-
-.signup-button {
-    background-color: forestgreen;
-    border: none;
-    color: white;
-    padding: 5% 8%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 8% 4%;
-    cursor: pointer;
-    border-radius: 12px;
-}
-
-
 /* ================= RESPONSIVE CONFIGS ======================== */
 
 @media only screen and (max-width:480px) {
@@ -590,6 +692,17 @@ footer img {
         max-height: 250px;
         overflow-y: auto;
         text-align: center;
+    }
+    /* HOME RESPONSIVE */
+    .sample-row {
+        flex-direction: column;
+    }
+    .sample-column {
+        max-width: 80%;
+        max-height: 70%;
+    }
+    .sample-column img {
+        margin: 5%;
     }
     /* CONTACT RESPONSIVE */
     .contact {
