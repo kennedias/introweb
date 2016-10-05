@@ -200,6 +200,7 @@ header img {
     flex-direction: column;
     margin-left: 20%;
     margin-right: 0;
+    max-width: 100%;
 }
 
 .gallery_row {
@@ -217,8 +218,7 @@ header img {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    text-align: justify;
-    justify-content: center;
+    margin-left: 30%
 }
 
 .pagination a {
