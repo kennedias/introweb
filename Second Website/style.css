@@ -160,6 +160,41 @@ header img {
 }
 
 
+/* ======================================= */
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.containerx {
+    width: 960px;
+}
+
+.rowx {
+    display: flex;
+    flex-direction: row;
+}
+
+.columnx {
+    /*    background-color: #FFFFBF; */
+    padding: 10px;
+    flex: 1 0 0;
+    box-sizing: border-box;
+    margin: 3% auto;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.columnx img {
+    width: 100%;
+}
+
+
+/* =========================================== */
+
+
 /* HOME  */
 
 .home {
