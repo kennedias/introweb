@@ -99,7 +99,7 @@ header img {
 
 /* SEARCH BAR */
 
-.searchBar {
+.searchbar {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -109,13 +109,13 @@ header img {
     margin: 0 auto;
 }
 
-.searchBar input {
+.searchbar input {
     height: 25px;
     width: 500px;
     margin: 5px;
 }
 
-.searchBar img {
+.searchbar img {
     max-width: 90%;
     max-height: 90%;
 }
@@ -160,7 +160,7 @@ header img {
 }
 
 
-/* Home - Feature */
+/* HOME - FEATURE */
 
 .row-feature {
     display: flex;
@@ -369,7 +369,7 @@ div.desc {
 }
 
 
-/* Login */
+/* LOGIN */
 
 .login {
     display: flex;
@@ -414,6 +414,20 @@ div.desc {
     text-align: left;
 }
 
+.login-button {
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    padding: 5% 8%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8% 4%;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
 
 /* BUY */
 
@@ -450,7 +464,53 @@ div.desc {
 }
 
 
-/* Footer */
+/* BUY CONFIRMATION */
+
+.buyconfirmation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3px;
+    margin: 0 auto;
+    background-color: lightgray;
+    max-width: 70%;
+    min-height: 40%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.buyconfirmation_row {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 2%;
+}
+
+.buyconfirmation_column {
+    flex: 1 0 0;
+    padding-right: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.buyconfirmation_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.buyconfirmation label {
+    display: block;
+    text-align: left;
+}
+
+
+/* FOOTER */
 
 footer {
     display: flex;
@@ -483,6 +543,23 @@ footer img {
     width: 75%;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+
+/*  SIGN UP  */
+
+.signup-button {
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    padding: 5% 8%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8% 4%;
+    cursor: pointer;
+    border-radius: 12px;
 }
 
 
