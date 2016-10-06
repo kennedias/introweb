@@ -318,19 +318,6 @@ div.desc {
     clear: both;
 }
 
-.buy-button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 5% 8%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 12px;
-}
-
 
 /* CONTACT */
 
@@ -380,16 +367,11 @@ div.desc {
 
 .contact-button {
     background-color: royalblue;
-    border: none;
-    color: white;
-    padding: 5% 8%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 8% 4%;
-    cursor: pointer;
-    border-radius: 12px;
+}
+
+.contact-button:hover {
+    background-color: dodgerblue;
+    color: darkblue;
 }
 
 .contact a {
@@ -480,20 +462,6 @@ div.desc {
 .login label {
     display: block;
     text-align: left;
-}
-
-.login-button {
-    background-color: forestgreen;
-    border: none;
-    color: white;
-    padding: 5% 8%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 8% 4%;
-    cursor: pointer;
-    border-radius: 12px;
 }
 
 .login a {
@@ -628,57 +596,9 @@ div.desc {
     width: 100%;
 }
 
-.passrecovery input {
-    padding: 8px 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
 .passrecovery label {
     display: block;
     text-align: left;
-}
-
-.passrecovery-button {
-    background-color: forestgreen;
-    border: none;
-    color: white;
-    padding: 5% 8%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    /*  margin: 8% 4%;*/
-    cursor: pointer;
-    border-radius: 12px;
-    width: 100%;
-}
-
-.passrecovery-button {
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-
-.passrecovery-button:hover {
-    background-color: #4CAF50;
-    color: darkgreen;
-}
-
-
-/*  SIGN UP  */
-
-.signup-button {
-    background-color: forestgreen;
-    border: none;
-    color: white;
-    padding: 5% 8%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 8% 4%;
-    cursor: pointer;
-    border-radius: 12px;
 }
 
 
