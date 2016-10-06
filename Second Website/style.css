@@ -166,16 +166,43 @@ main {
     justify-content: center;
 }
 
+input {
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5% 8%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    color: darkgreen;
+}
+
 
 /* HOME  */
-
-.home {
-    /*   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3px;
-    margin: 0 auto; */
-}
 
 .home-row {
     display: flex;
@@ -300,7 +327,6 @@ div.desc {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 8% 4%;
     cursor: pointer;
     border-radius: 12px;
 }
@@ -315,7 +341,6 @@ div.desc {
     padding: 3px;
     margin: 0 auto;
     background-color: lightgray;
-    max-width: 70%;
     min-height: 40%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -335,6 +360,7 @@ div.desc {
     padding-right: 50px;
     text-align: center;
     margin: 0 auto;
+    width: 400px;
 }
 
 .contact_form {
@@ -344,6 +370,7 @@ div.desc {
     padding: 5%;
     margin: 0 auto;
     background-color: white;
+    width: 100%;
 }
 
 .contact label {
@@ -418,7 +445,6 @@ div.desc {
     padding: 3px;
     margin: 0 auto;
     background-color: lightgray;
-    max-width: 70%;
     min-height: 40%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -435,9 +461,10 @@ div.desc {
 
 .login_column {
     flex: 1 0 0;
-    padding-right: 50px;
+    padding-right: 30px;
     text-align: center;
     margin: 0 auto;
+    width: 400px;
 }
 
 .login_form {
@@ -447,6 +474,7 @@ div.desc {
     padding: 5%;
     margin: 0 auto;
     background-color: white;
+    width: 100%;
 }
 
 .login label {
@@ -568,7 +596,6 @@ div.desc {
     padding: 3px;
     margin: 0 auto;
     background-color: lightgray;
-    max-width: 70%;
     min-height: 40%;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -585,9 +612,10 @@ div.desc {
 
 .passrecovery_column {
     flex: 1 0 0;
-    padding-right: 50px;
+    padding-right: 30px;
     text-align: center;
     margin: 0 auto;
+    width: 400px;
 }
 
 .passrecovery_form {
@@ -597,6 +625,13 @@ div.desc {
     padding: 5%;
     margin: 0 auto;
     background-color: white;
+    width: 100%;
+}
+
+.passrecovery input {
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
 .passrecovery label {
@@ -613,9 +648,20 @@ div.desc {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 8% 4%;
+    /*  margin: 8% 4%;*/
     cursor: pointer;
     border-radius: 12px;
+    width: 100%;
+}
+
+.passrecovery-button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.passrecovery-button:hover {
+    background-color: #4CAF50;
+    color: darkgreen;
 }
 
 
@@ -715,12 +761,12 @@ footer img {
         margin: 5%;
     }
     /* CONTACT RESPONSIVE */
-    .contact {
-        max-width: 100%;
-    }
     .contact_row {
         margin-left: 5%;
         margin-right: 5%;
+    }
+    .contact_column {
+        width: 100%;
     }
     /* GALLERY RESPONSIVE */
     .responsive {
@@ -729,6 +775,17 @@ footer img {
     .gallery_container {
         margin-left: 5%;
     }
+    /* LOGIN AND PASSWORD AND SIGNUP RECOVERY RESPONSIVE */
+    .login_column {
+        width: 100%;
+    }
+    .passrecovery_column {
+        width: 100%;
+    }
+    /* BUY RESPONSIVE */
+    .buy_row {
+        flex-direction: column;
+    }
     /* FOOTER */
     footer {
         font-size: 20px;
@@ -736,6 +793,7 @@ footer img {
         width: 100%;
     }
     .row_footer {
+        padding-top: 2%;
         text-align: center;
         flex-direction: column;
     }

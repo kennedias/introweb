@@ -1,0 +1,32 @@
+
+.passrecovery input {
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+.passrecovery-button {
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    padding: 5% 8%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*  margin: 8% 4%;*/
+    cursor: pointer;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.passrecovery-button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.passrecovery-button:hover {
+    background-color: #4CAF50;
+    color: darkgreen;
+}
